@@ -1,0 +1,51 @@
+
+.terms {
+    background-color: rgb(40,40,40);
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.terms-img-div {
+    width : 50%;
+    height: 100%;
+}
+
+.terms-img-div > img {
+    height : 100%;
+    width : 100%;
+    object-fit: cover;
+}
+
+.terms-left-text-container {
+    width : 50%;
+    height: 100%;
+    padding : 30px;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+
+.terms-left-text-container > h2 {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.terms-left-text-container > h3 {
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+.terms-left-text-container > hr {
+    margin-bottom: 10px;
+}
+
+.terms-left-text-container > p {
+    color: white;
+}
+
+.terms-left-text-container > ul {
+    color: white;
+    margin-left: 20px;
+}
