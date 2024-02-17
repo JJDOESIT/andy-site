@@ -33,3 +33,6 @@
     opacity: 0.8;
 }
 
+.home-image-container img{
+    height: 100%;
+}

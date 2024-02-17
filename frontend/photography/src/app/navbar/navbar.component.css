@@ -79,7 +79,11 @@
 }
 
 .navbar-links > li > a:hover{
-    transform: translateY(-5px);
+    transform: translateY(-2px);
+}
+
+.navbar-links > li > a{
+    z-index: 10;
 }
 
 @media (max-width: 780px){
