@@ -4,10 +4,10 @@
             <p (click) = "updateUrl(['/'])" [ngStyle] = "{'text-decoration': getPage() == '/' ? 'underline' : 'none'}">HOME</p>
         </li>
         <li>
-            <p (click) = "updateUrl(['/','pricing'])" [ngStyle] = "{'text-decoration': getPage() == 'pricing' ? 'underline' : 'none'}">PRICING</p>
+            <p (click) = "updateUrl(['/','pricing'])" [ngStyle] = "{'text-decoration': getPage() == '/pricing' ? 'underline' : 'none'}">PRICING</p>
         </li>
         <li>
-            <a href="" >WORK</a>
+            <p (click) = "updateUrl(['/','work'])" [ngStyle] = "{'text-decoration': getPage() == '/work' ? 'underline' : 'none'}">WORK</p>
         </li>
     </ul>
     <div class="navbar-title">
