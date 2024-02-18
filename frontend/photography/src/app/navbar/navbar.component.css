@@ -21,14 +21,14 @@
     padding-right: 10px;
 }
 
-.navbar-list-wrapper > li > a{
+.navbar-list-wrapper > li > p{
     font-weight: bold;
     color: white;
     position: relative;
-    text-decoration: none;
+    text-underline-offset: 2px;
 }
 
-.navbar-list-wrapper > li > a::after{
+.navbar-list-wrapper > li > p::after{
     content: '';
     position: absolute;
     bottom: 0;
@@ -38,11 +38,11 @@
     background-color: gold;
 }
 
-.navbar-list-wrapper > li > a:hover{
+.navbar-list-wrapper > li > p:hover{
     cursor: pointer;
 }
 
-.navbar-list-wrapper > li > a:hover::after{
+.navbar-list-wrapper > li > p:hover::after{
     width: 100%;
     transition: all ease-in 0.25s;
 }
@@ -127,7 +127,7 @@
     .navbar-title > h1{
         font-size: 1.5rem;
     }
-    .navbar-list-wrapper > li > a{
+    .navbar-list-wrapper > li > p{
         font-size: 0.75rem;
     }
     .navbar-links > li:first-child > a{
@@ -148,7 +148,7 @@
     .navbar-title > h1{
         font-size: 1.20rem;
     }
-    .navbar-list-wrapper > li > a{
+    .navbar-list-wrapper > li > p{
         font-size: 0.65rem;
     }
     .navbar-links > li:first-child > a{

@@ -1,13 +1,13 @@
 <div class="navbar">
     <ul class="navbar-list-wrapper">
         <li>
-            <a href="">HOME</a>
+            <p (click) = "updateUrl(['/'])" [ngStyle] = "{'text-decoration': getPage() == '/' ? 'underline' : 'none'}">HOME</p>
         </li>
         <li>
-            <a>PRICING</a>
+            <p (click) = "updateUrl(['/','pricing'])" [ngStyle] = "{'text-decoration': getPage() == 'pricing' ? 'underline' : 'none'}">PRICING</p>
         </li>
         <li>
-            <a>WORK</a>
+            <a href="" >WORK</a>
         </li>
     </ul>
     <div class="navbar-title">
