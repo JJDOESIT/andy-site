@@ -1,7 +1,7 @@
 
 .terms {
     background-color: rgb(40,40,40);
-    height: calc(100% - 70px);
+    height: calc(100% - 115px);
     width: 100%;
     display: flex;
 }
@@ -19,10 +19,15 @@
 
 .terms-left-text-container {
     width : 50%;
-    height: 100%;
-    padding : 30px;
+    height: calc(100% - 50px);
+    padding : 20px 35px 50px 35px;
     overflow: scroll;
-    margin-bottom: 50px;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.terms-left-text-container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
 
 .terms-left-text-container > h2 {

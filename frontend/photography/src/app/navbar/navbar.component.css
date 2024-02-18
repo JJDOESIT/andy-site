@@ -4,6 +4,7 @@
     align-items: center;
     background-color: rgb(40,40,40);
     width: 100%;
+    height: 70px;
     padding: 20px 0 20px 0;
     border-bottom: 5px solid rgb(36, 35, 35);
 }
@@ -23,6 +24,27 @@
 .navbar-list-wrapper > li > a{
     font-weight: bold;
     color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-list-wrapper > li > a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: gold;
+}
+
+.navbar-list-wrapper > li > a:hover{
+    cursor: pointer;
+}
+
+.navbar-list-wrapper > li > a:hover::after{
+    width: 100%;
+    transition: all ease-in 0.25s;
 }
 
 .navbar-title{
@@ -34,10 +56,25 @@
 
 .navbar-title > h1{
     display: flex;
+    text-align: center;
     margin: 0;
     padding: 0;
     height: fit-content;
-    color: white;
+    color: white;  
+}
+
+.navbar-title > h1:first-child{
+    background: linear-gradient(to right, #ffffff 45%, #f69b95, #f57269, #f25145, #680f0f);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.navbar-title > h1:last-child{
+    background: linear-gradient(to right, #ffffff 30%, #f69b95, #f57269, #f25145, #680f0f);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .navbar-links{
@@ -109,28 +146,7 @@
 
 @media (max-width: 600px){
     .navbar-title > h1{
-        font-size: 1.2rem;
-    }
-    .navbar-list-wrapper > li > a{
-        font-size: 0.70rem;
-    }
-    .navbar-links > li:first-child > a{
-        height: 37px;
-        width: 37px;
-    }
-    .navbar-links > li:nth-child(2) > a{
-        height: 25px;
-        width: 25px;
-    }
-    .navbar-links > li:nth-child(3) > a{
-        height: 25px;
-        width: 35px;
-    } 
-}
-
-@media (max-width: 600px){
-    .navbar-title > h1{
-        font-size: 1rem;
+        font-size: 1.20rem;
     }
     .navbar-list-wrapper > li > a{
         font-size: 0.65rem;
@@ -156,34 +172,21 @@
 }
 
 @media (max-width: 480px){
-    .navbar-title > h1{
-        font-size: 0.75rem;
+    .navbar{
+        display: block;
     }
-    .navbar-list-wrapper > li > a{
-        font-size: 0.60rem;
+
+    .navbar > ul:first-child{
+        display: inline-flex;
+        width: calc(50% - 30px);
     }
-    .navbar-links > li:first-child > a{
-        height: 27px;
-        width: 27px;
+    .navbar > div:nth-of-type(1){
+        display: inline-flex;
+        align-self: center;
+        transform: translateY(10px);
+        width: calc(50%);
     }
-    .navbar-links > li:nth-child(2) > a{
-        height: 15px;
-        width: 15px;
-    }
-    .navbar-links > li:nth-child(3) > a{
-        height: 15px;
-        width: 25px;
-    } 
-    .navbar-links > li{
-        padding-left: 15px;
-    }
-    .navbar-links > li:first-child{
-        padding-left: 0;
-    }
-    .navbar-list-wrapper{
-        margin-left: 20px;
-    }
-    .navbar-links{
-        margin-right: 20px;
+    .navbar > ul:nth-of-type(2){
+        margin-left: 30px;
     }
 }

@@ -1,7 +1,7 @@
 
 .home{
     display: flex;
-    height: 100%;
+    height: calc(100% - 115px);
     width: 100%;
     background-color: rgb(40,40,40);
 }
@@ -9,21 +9,35 @@
 .home-text-container{
     display: flex;
     flex-direction: column;
-    transform: translateY(-100px);
     height: 100%;
     width: 50%;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .home-text-container > div:first-child{
+    transform: translateY(-75px);
     font-weight: bold;
     color: white;
     font-size: 2rem;
     text-align: center;
+    width: 80%;
+}
+
+.home-text-container >  div:nth-of-type(2){
+    position: absolute;
+    bottom: 30px;
+}
+
+.home-text-container > div:nth-of-type(2) > a{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(153, 200, 251);
 }
 
 .home-service-button{
+    transform: translateY(-75px);
     border-radius: 3rem;
     padding: 15px;
     margin-top: 20px;
@@ -43,6 +57,11 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.home-gold-text{
+    display: inline;
+    color: gold;
 }
 
 @media (max-width: 780px){
