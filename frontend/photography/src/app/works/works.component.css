@@ -1,7 +1,7 @@
 
 
 .works {
-    height: 100%;
+    height: calc(100% - 117px);
     width: 100%;
     background-color: rgb(40,40,40);
 }
@@ -12,7 +12,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 10px;
     margin: 0 35px;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .works-grid img {
