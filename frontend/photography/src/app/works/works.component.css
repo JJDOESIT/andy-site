@@ -1,0 +1,24 @@
+
+
+.works {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(40,40,40);
+}
+
+.works-grid {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin: 0 35px;
+    overflow: scroll;
+}
+
+.works-grid img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    border: 8px solid rgb(30,30,30);
+    object-fit: cover;
+}
