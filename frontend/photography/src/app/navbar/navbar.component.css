@@ -64,14 +64,14 @@
 }
 
 .navbar-title > h1:first-child{
-    background: linear-gradient(to right, #ffffff 45%, #f69b95, #f57269, #f25145, #680f0f);
+    background: linear-gradient(to right, #ffffff 45%, #a1a05f, #889e88, #8d9b9d, #2d4155);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
 }
 
 .navbar-title > h1:last-child{
-    background: linear-gradient(to right, #ffffff 30%, #f69b95, #f57269, #f25145, #680f0f);
+    background: linear-gradient(to right, #ffffff 30%, #a1a05f, #889e88, #8d9b9d, #2d4155);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
